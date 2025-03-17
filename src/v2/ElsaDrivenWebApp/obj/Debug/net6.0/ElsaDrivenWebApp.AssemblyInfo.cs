@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElsaDrivenWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99c152ad1eb302fb49b57be4cc766472adb51e47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f4ba463119aab6cdf13c3ef2344d8a85b05ce3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElsaDrivenWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElsaDrivenWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

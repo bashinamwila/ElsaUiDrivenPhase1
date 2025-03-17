@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4y6Q8TC7WM8=",
+  "dgSpecHash": "7S4h16DxtF4=",
   "success": true,
   "projectFilePath": "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
