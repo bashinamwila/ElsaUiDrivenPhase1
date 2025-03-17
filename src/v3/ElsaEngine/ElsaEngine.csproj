@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<!-- Update Target Framework to .NET 8 -->
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- Elsa 3.3.4 core workflow library -->
+		<PackageReference Include="Elsa" Version="3.3.4" />
+		<!-- Elsa 3.3.4 HTTP activities (replaces Elsa.Activities.Http) -->
+		<PackageReference Include="Elsa.Http" Version="3.3.4" />
+		<!-- Elsa 3.3.4 Quartz temporal activities (replaces Elsa.Activities.Temporal.Quartz) -->
+		<PackageReference Include="Elsa.Quartz" Version="3.3.4" />
+		<!-- Elsa 3.3.4 EF Core persistence for SQLite (replaces Elsa.Persistence.EntityFramework.Sqlite) -->
+		<PackageReference Include="Elsa.EntityFrameworkCore.Sqlite" Version="3.3.4" />
+		<!-- Elsa 3.3.4 Workflow API endpoints (replaces Elsa.Server.Api) -->
+		<PackageReference Include="Elsa.Workflows.Api" Version="3.3.4" />
+		<!-- (Removed Elsa.Designer.Components.Web, as Elsa 3 uses a different Studio UI) -->
+	</ItemGroup>
+</Project>

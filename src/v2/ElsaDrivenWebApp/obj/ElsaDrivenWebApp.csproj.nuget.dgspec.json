@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Elsa\\ElsaDrivenUI-Phase1\\src\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj": {}
+    "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Elsa\\ElsaDrivenUI-Phase1\\src\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj": {
+    "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Elsa\\ElsaDrivenUI-Phase1\\src\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj",
+        "projectUniqueName": "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj",
         "projectName": "ElsaDrivenWebApp",
-        "projectPath": "C:\\Projects\\Elsa\\ElsaDrivenUI-Phase1\\src\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj",
+        "projectPath": "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\ElsaDrivenWebApp\\ElsaDrivenWebApp.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Elsa\\ElsaDrivenUI-Phase1\\src\\ElsaDrivenWebApp\\obj\\",
+        "outputPath": "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\ElsaDrivenWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,24 +60,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
