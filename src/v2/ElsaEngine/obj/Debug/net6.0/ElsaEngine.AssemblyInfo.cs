@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElsaEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99c152ad1eb302fb49b57be4cc766472adb51e47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab9c0a0271fe3f1ff38f9ab585f1f4c55e6dfc45")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElsaEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElsaEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

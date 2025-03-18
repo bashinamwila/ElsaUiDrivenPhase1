@@ -9,6 +9,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using Elsa.Server.Api.Endpoints.Signals;
 using UserTask.AddOns.Endpoints.Models;
 using UserTask.AddOns.Extensions;
+using Microsoft.Extensions.Logging;
 
 namespace UserTask.AddOns.Endpoints
 {
@@ -21,14 +22,17 @@ namespace UserTask.AddOns.Endpoints
         private readonly IBookmarkFinder bookmarkFinder;
         private readonly ServerContext serverContext;
         private readonly IWorkflowInstanceStore workflowInstanceStore;
+        private readonly ILogger<UserTaskSignalController> logger;
 
 
-        public UserTaskSignalController(IUserTaskSignalInvoker invoker, IBookmarkFinder bookmarkFinder, IWorkflowInstanceStore workflowInstanceStore, ServerContext serverContext)
+        public UserTaskSignalController(IUserTaskSignalInvoker invoker, IBookmarkFinder bookmarkFinder, IWorkflowInstanceStore workflowInstanceStore, ServerContext serverContext,
+            ILogger<UserTaskSignalController> logger)
         {
             this.workflowInstanceStore = workflowInstanceStore;
             this.serverContext = serverContext;
             this.invoker = invoker;
             this.bookmarkFinder = bookmarkFinder;
+            this.logger = logger;
 
         }
 
@@ -44,6 +48,7 @@ namespace UserTask.AddOns.Endpoints
         public async Task<IActionResult> Handle(string signalName, ExecuteSignalRequest request,
             CancellationToken cancellationToken = default)
         {
+            logger.LogInformation($"Executing {signalName}.... ");
             var collectedWorkflows = await invoker.ExecuteWorkflowsAsync(signalName, request.Input,
                 request.WorkflowInstanceId, request.CorrelationId, cancellationToken);
             return Ok(collectedWorkflows.ToList());

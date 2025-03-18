@@ -3591,6 +3591,37 @@
             "related": ".xml"
           }
         }
+      },
+      "UserTask.AddOns/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Elsa": "2.8.2",
+          "Elsa.Server.Api": "2.8.2",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "bin/placeholder/UserTask.AddOns.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserTask.AddOns.dll": {}
+        }
+      },
+      "Workflow.Samples/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Elsa.Abstractions": "2.8.2",
+          "Elsa.Activities.Console": "2.8.2",
+          "Elsa.Activities.Http": "2.8.2",
+          "UserTask.AddOns": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Workflow.Samples.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Workflow.Samples.dll": {}
+        }
       }
     }
   },
@@ -9404,6 +9435,16 @@
         "timezoneconverter.3.5.0.nupkg.sha512",
         "timezoneconverter.nuspec"
       ]
+    },
+    "UserTask.AddOns/1.0.0": {
+      "type": "project",
+      "path": "../UserTaskSignal/UserTask.AddOns.csproj",
+      "msbuildProject": "../UserTaskSignal/UserTask.AddOns.csproj"
+    },
+    "Workflow.Samples/1.0.0": {
+      "type": "project",
+      "path": "../Workflow.Samples/Workflow.Samples.csproj",
+      "msbuildProject": "../Workflow.Samples/Workflow.Samples.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9415,7 +9456,9 @@
       "Elsa.Designer.Components.Web >= 2.8.2",
       "Elsa.Persistence.EntityFramework.Sqlite >= 2.8.2",
       "Elsa.Retention >= 2.8.2",
-      "Elsa.Server.Api >= 2.8.2"
+      "Elsa.Server.Api >= 2.8.2",
+      "UserTask.AddOns >= 1.0.0",
+      "Workflow.Samples >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9449,7 +9492,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\UserTaskSignal\\UserTask.AddOns.csproj": {
+              "projectPath": "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\UserTaskSignal\\UserTask.AddOns.csproj"
+            },
+            "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\Workflow.Samples\\Workflow.Samples.csproj": {
+              "projectPath": "C:\\Projects\\Elsa\\ElsaUiDriven\\Phases\\Phase1\\src\\v2\\Workflow.Samples\\Workflow.Samples.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
